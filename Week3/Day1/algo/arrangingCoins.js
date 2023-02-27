@@ -10,6 +10,12 @@ Given the integer n, return the number of complete rows of the staircase you wil
 
 function arrangeCoins(n){
     //your code here
+    var i = 1;
+    while (n >= i){
+        n -= i;
+        i++;
+    }
+    return i-1;
 }
 
 
