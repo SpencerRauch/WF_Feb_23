@@ -12,7 +12,7 @@ async function getPoke(){
     var data = await response.json()
     console.log(data)
     resultsElement.innerHTML = `
-    <img src="${data.sprites.front_default}" alt="${data.name}" width="100px">
+    <img src="${data.sprites.front_default}" alt="${data.name}" width="200px">
     `
     
 }
