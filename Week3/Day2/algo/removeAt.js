@@ -40,7 +40,17 @@ const arr4Expected =  ["cake", "pie", "cookies", "candy"];
  * @returns {any} The removed item.
  */
 function removeAt(items, idx) {
-  //Your code here
+  if (idx < 0 || idx >= items.length){
+    return null
+  }
+  var removed = items[idx]
+
+  for (var i = idx; i < items.length -1; i++){
+    items[i] = items[i+1]
+  }
+
+  items.pop()
+  return removed
 }
 
 // Tests
