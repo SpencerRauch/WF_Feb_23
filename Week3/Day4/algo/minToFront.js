@@ -16,7 +16,7 @@ const nums3 = [5, 1, 0, 2, 3, 0];
 const expected3 = [0, 5, 1, 2, 3, 0];
 
 // Determine minium value and its index
-// Swap or shift values so that the minimum value now appears at the front
+// Swap or shift values so that the minimum value now appears at the front, preserving the order otherwise
 
 
 /**
