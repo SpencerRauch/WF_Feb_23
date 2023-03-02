@@ -28,6 +28,21 @@ const expected3 = [0, 5, 1, 2, 3, 0];
  */
 function minToFront(nums) {
   // code here
+  var min = nums[0]
+  var mindex = 0
+
+  for (var i = 1; i < nums.length; i++){ // this loop finds the minimum
+    if (nums[i] < min){
+        min = nums[i]
+        mindex = i
+    }
+  }
+
+  for (var i = mindex; i >=1; i--){ // this loop shifts everything to the left of the minimum to the right
+    nums[i] = nums[i-1]            // overwriting the minimum and creating space at the beginning of the array
+  }
+  nums[0] = min //set the beginning to the minimum value
+  return nums
 }
 
 // Tests
