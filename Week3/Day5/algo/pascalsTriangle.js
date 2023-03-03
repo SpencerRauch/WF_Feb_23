@@ -11,22 +11,36 @@ For example, if n is 5, the function should return the following array:
 
 
 [
-     [1],
-   [1, 1],
-  [1, 2, 1],
- [1, 3, 3, 1],
-[1, 4, 6, 4, 1]
+    [1],
+    [1, 1],
+    [1, 2, 1],
+    [1, 3, 3, 1],
+    [1, 4, 6, 4, 1]
 
 ]
 
-hint: How many digits are on row n? 
+hint: How many digits are in row n? 
 
 */
 
 
 function generatePascalsTriangle(n) {
-    var triangle = [];
-    //your code here
+    let triangle = [];
+
+    for (let i = 0; i < n; i++) {
+        let row = [];
+
+        for (let j = 0; j <= i; j++) {
+            if (j === 0 || j === i) {
+                row.push(1);
+            } else {
+                row.push(triangle[i - 1][j - 1] + triangle[i - 1][j]);
+            }
+        }
+
+        triangle.push(row);
+    }
+
     return triangle;
 }
 
