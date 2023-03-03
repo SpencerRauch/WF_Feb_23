@@ -25,7 +25,7 @@ For example, if n is 5, the function should return the following array:
 
 
 function generatePascalsTriangle(n) {
-    let triangle = [];
+    var triangle = [];
     // your code here
     return triangle;
 }
