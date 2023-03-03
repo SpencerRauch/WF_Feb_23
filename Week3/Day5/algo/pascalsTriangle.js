@@ -19,14 +19,14 @@ For example, if n is 5, the function should return the following array:
 
 ]
 
-
+hint: How many digits are on row n? 
 
 */
 
 
 function generatePascalsTriangle(n) {
     var triangle = [];
-    // your code here
+    //your code here
     return triangle;
 }
 
